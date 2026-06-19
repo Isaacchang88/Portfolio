@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac | Portfolio</title>
+  <meta name="description" content="IT Graduate & AI Engineer Portfolio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-mark">IC</span>
+        Isaac
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+
+      <!-- EDIT: Change to your email -->
+      <a href="mailto:your@email.com" class="nav-cta">Get in Touch</a>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav-mobile" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <!-- EDIT: Change to your email -->
+      <a href="mailto:your@email.com">Get in Touch</a>
+    </div>
+  </nav>
+
+
+  <!-- ================================================
+       HERO
+       EDIT: Name, title, intro text, social links, CV link
+       ================================================ -->
+  <section class="hero">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="hero-inner">
+
+      <!-- Left: Text -->
+      <div class="hero-text">
+        <!-- EDIT: Change status message -->
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Open to graduate opportunities
+        </div>
+
+        <h1 class="hero-name">Heng-Chia (Isaac) Chang</h1>
+
+        <p class="hero-title">
+          Developer &amp; <strong>Software Engineer</strong>
+        </p>
+
+        <p class="hero-intro">
+          Passionate about building intelligent systems and creating impactful technology.
+          Currently completing my Master of Artificial Intelligence, with hands-on experience
+          in machine learning, full-stack development, and data-driven solutions.
+        </p>
+
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">
+            View Projects
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <!-- EDIT: Link href to your CV file, e.g. "cv.pdf" -->
+          <a href="#" class="btn btn-outline">Download CV</a>
+        </div>
+
+        <!-- EDIT: Update your social profile links -->
+        <div class="hero-social">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/isaachang" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="mailto:your@email.com" aria-label="Email">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Code card (hidden on mobile) -->
+      <!-- EDIT: Update the values inside the code card to match your real info -->
+      <div class="hero-code-card" aria-hidden="true">
+        <div class="code-card-header">
+          <span class="code-dot red"></span>
+          <span class="code-dot yellow"></span>
+          <span class="code-dot green"></span>
+          <span class="code-filename">profile.js</span>
+        </div>
+        <div class="code-body">
+          <div class="code-line"><span class="ln">1</span><span class="c-cmt">// Hi, y'all 👋</span></div>
+          <div class="code-line"><span class="ln">2</span>&nbsp;</div>
+          <div class="code-line"><span class="ln">3</span><span class="c-kw">const</span><span
+              class="c-var"></span><span class="c-pun"> = {</span></div>
+          <div class="code-line"><span class="ln">4</span>&nbsp;&nbsp;<span class="c-prop">name</span><span
+              class="c-pun">: </span><span class="c-str">"Isaac"</span><span class="c-pun">,</span></div>
+          <div class="code-line"><span class="ln">5</span>&nbsp;&nbsp;<span class="c-prop">role</span><span
+              class="c-pun">: </span><span class="c-str">"AI Engineer"</span><span class="c-pun">,</span></div>
+          <div class="code-line"><span class="ln">6</span>&nbsp;&nbsp;<span class="c-prop">degree</span><span
+              class="c-pun">: </span><span class="c-str">"Master of Artificial Intelligence"</span><span
+              class="c-pun">,</span></div>
+          <div class="code-line"><span class="ln">7</span>&nbsp;&nbsp;<span class="c-prop">focus</span><span
+              class="c-pun">: [</span></div>
+          <div class="code-line"><span class="ln">8</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"Machine
+              Learning"</span><span class="c-pun">,</span></div>
+          <div class="code-line"><span class="ln">9</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"Full-Stack
+              Dev"</span><span class="c-pun">,</span></div>
+          <div class="code-line"><span class="ln">10</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"Data
+              Science"</span></div>
+          <div class="code-line"><span class="ln">11</span>&nbsp;&nbsp;<span class="c-pun">],</span></div>
+          <div class="code-line"><span class="ln">12</span>&nbsp;&nbsp;<span class="c-prop">status</span><span
+              class="c-pun">: </span><span class="c-str">"Open to Work"</span></div>
+          <div class="code-line"><span class="ln">13</span><span class="c-pun">};</span></div>
+          <div class="code-line"><span class="ln">14</span>&nbsp;</div>
+          <div class="code-line"><span class="ln">15</span><span class="c-kw">export default</span><span
+              class="c-var"></span><span class="c-pun">;</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about-section section" id="about">
+    <div class="container fade-in">
+      <div class="section-label">About Me</div>
+      <div class="about-inner">
+        <p>
+          Hi! I'm <strong>Isaac</strong>. My interest in technology/coding began in high school when I built my first
+          application using Python and a Raspberry Pi. My interest for software creation and problem-solving was ignited
+          by that experience, and it has grown throughout both my professional and academic life. I completed a Bachelor
+          of Information Technology at RMIT University, where I developed a strong foundation in software engineering,
+          data structures, database systems and web development. Through various projects, I
+          gained hands-on experience designing, building, and deploying software solutions while working both
+          independently and in team environments.
+        </p>
+        <p>
+          I'm now in the final stages of my Master of Artificial Intelligence, deepening my expertise
+          in machine learning, deep learning, and intelligent systems. I enjoy solving real-world
+          problems through code - from building scalable web applications to designing AI-powered
+          solutions - and I'm actively seeking graduate opportunities where I can contribute and grow.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       SKILLS
+       EDIT: Add or remove tags inside each .skill-group
+       ================================================ -->
+  <section class="skills-section section" id="skills">
+    <div class="container">
+      <div class="fade-in section-title">
+        <div class="section-label">Skills</div>
+        <h2>Technical Skills</h2>
+        <p>Languages, frameworks, and tools I work with.</p>
+      </div>
+
+      <div class="skills-grid fade-in">
+
+        <div class="skill-group">
+          <div class="skill-group-label">Programming Languages</div>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Java</span>
+            <span class="tag">SQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">C++</span>
+            <span class="tag">PHP</span>
+            <span class="tag">HTML &amp; CSS</span>
+            <span class="tag">Swift</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Frameworks &amp; Libraries</div>
+          <div class="skill-tags">
+            <span class="tag tag-accent">React</span>
+            <span class="tag tag-accent">React Native</span>
+            <span class="tag tag-accent">Node.js</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Tools &amp; Platforms</div>
+          <div class="skill-tags">
+            <span class="tag tag-neutral">Git &amp; GitHub</span>
+            <span class="tag tag-neutral">Docker</span>
+            <span class="tag tag-neutral">Jupyter Notebook</span>
+            <span class="tag tag-neutral">VS Code</span>
+            <span class="tag tag-neutral">AWS</span>
+            <span class="tag tag-neutral">Postman</span>
+            <span class="tag tag-neutral">IntelliJ IDEA</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Concepts &amp; Methodologies</div>
+          <div class="skill-tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Deep Learning</span>
+            <span class="tag">NLP</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Full-Stack Development</span>
+            <span class="tag">Data Analysis</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       FEATURED PROJECTS
+       EDIT: Update each project card with real info.
+       For more projects, see projects.html.
+       ================================================ -->
+  <section class="featured-section section" id="projects">
+    <div class="container">
+      <div class="fade-in section-title">
+        <div class="section-label">Work</div>
+        <h2>Featured Projects</h2>
+        <p>A selection of projects from my university studies.</p>
+      </div>
+
+      <div class="projects-grid fade-in">
+
+        <!-- ── Project Card 1 ───────────────────── -->
+        <div class="project-card">
+          <div class="project-image">
+            <!-- OPTION A: Use a screenshot — replace with your image path:
+                 <img src="images/project1.png" alt="AI Recommendation System"> -->
+            <!-- OPTION B: Keep the emoji placeholder below -->
+            <div class="project-image-placeholder">🤖</div>
+            <div class="project-overlay">
+              <!-- EDIT: Add your GitHub & live demo links -->
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <!-- EDIT: Category, title, description, and tech tags -->
+            <div class="project-cat">Machine Learning</div>
+            <h3>AI Recommendation System</h3>
+            <p>A collaborative filtering recommendation engine that personalises content for users using deep learning
+              and matrix factorisation techniques.</p>
+            <div class="project-tech">
+              <span class="tag">Python</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Flask</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Project Card 2 ───────────────────── -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-image-placeholder">🌐</div>
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-cat">Web Development</div>
+            <h3>Full-Stack Web Application</h3>
+            <p>A responsive, full-stack web app with user authentication, real-time updates, and a RESTful API backend
+              deployed on AWS.</p>
+            <div class="project-tech">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Project Card 3 ───────────────────── -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-image-placeholder">📊</div>
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-cat">Data Science</div>
+            <h3>Data Analytics Dashboard</h3>
+            <p>An interactive dashboard visualising trends and insights from large datasets, with predictive modelling
+              and exportable reports.</p>
+            <div class="project-tech">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section-cta fade-in" style="margin-top: 36px;">
+        <a href="projects.html" class="btn btn-outline-dark">
+          View All Projects
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       EXPERIENCE
+       ADD: Time line, title, details
+       ================================================ -->
+  <section class="experience-section section" id="experience">
+    <div class="container">
+      <div class="fade-in section-title">
+        <div class="section-label">Experience</div>
+        <h2>Professional Experience</h2>
+        <p>Career highlights and relevant roles with dates, titles, and details.</p>
+      </div>
+
+      <div class="experience-timeline fade-in">
+        <div class="experience-item">
+          <div class="experience-meta">
+            <span class="experience-date">2024 — Present</span>
+            <span class="experience-title">Software Engineer Intern</span>
+          </div>
+          <div class="experience-details">
+            <p>Worked on full-stack features for internal web applications, implemented REST APIs, and collaborated with
+              cross-functional teams to deliver product improvements.</p>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-meta">
+            <span class="experience-date">Feb 2025 — Aug 2025</span>
+            <span class="experience-title">RMIT University - Full-Stack Development (Placement)</span>
+          </div>
+          <div class="experience-details">
+            <p></p>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-meta">
+            <span class="experience-date">2023 — 2024</span>
+            <span class="experience-title">Junior Developer</span>
+          </div>
+          <div class="experience-details">
+            <p>Built responsive websites and helped maintain backend services using JavaScript, PHP, and MySQL.
+              Supported deployment workflows using Docker and cloud services.</p>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-meta">
+            <span class="experience-date">2022 — 2023</span>
+            <span class="experience-title">High School Student</span>
+          </div>
+          <div class="experience-details">
+            <p>Basic understanding of raspberry pi and </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       EDUCATION
+       EDIT: Degree names, university, years, subjects
+       ================================================ -->
+  <section class="education-section section" id="education">
+    <div class="container">
+      <div class="fade-in section-title">
+        <div class="section-label">Education</div>
+        <h2>Academic Background</h2>
+        <p>My journey through higher education in technology and AI.</p>
+      </div>
+
+      <div class="edu-cards fade-in">
+
+        <!-- Master's degree -->
+        <div class="edu-card edu-card-current">
+          <div class="edu-status current"><span class="dot"></span> In Progress</div>
+          <div class="edu-degree">Master of Artificial Intelligence</div>
+          <div class="edu-school">RMIT University, Melbourne, Australia</div>
+          <div class="edu-years">2025 — Expected 2026</div>
+          <div class="edu-courses-label">Relevant Coursework</div>
+          <div class="edu-courses-list">
+            <span class="edu-course-tag">Deep Learning</span>
+            <span class="edu-course-tag">Natural Language Processing</span>
+            <span class="edu-course-tag">Algorithms</span>
+            <span class="edu-course-tag">Machine Learning</span>
+            <span class="edu-course-tag">AI Ethics</span>
+            <span class="edu-course-tag">Data Mining</span>
+            <span class="edu-course-tag">Social Media Networks Analytics</span>
+          </div>
+        </div>
+
+        <!-- Bachelor's degree -->
+        <div class="edu-card">
+          <div class="edu-status completed"><span class="dot"></span> Completed</div>
+          <div class="edu-degree">Bachelor of Information Technology</div>
+          <div class="edu-school">RMIT University, Melbourne, Australia</div>
+          <div class="edu-years">2022 — 2025</div>
+          <div class="edu-courses-label">Relevant Coursework</div>
+          <div class="edu-courses-list">
+            <span class="edu-course-tag">Security</span>
+            <span class="edu-course-tag">Data Structures</span>
+            <span class="edu-course-tag">Database Systems</span>
+            <span class="edu-course-tag">Software Engineering</span>
+            <span class="edu-course-tag">Web Development</span>
+            <span class="edu-course-tag">Full-Stack Development</span>
+            <span class="edu-course-tag">iPhone Development</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       FOOTER
+       EDIT: Name, social links
+       ================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <!-- EDIT: Your name -->
+        <div class="footer-name">Heng-Chia (Isaac) Chang</div>
+        <div class="footer-copy">© 2026 · Built with HTML, CSS &amp; JavaScript</div>
+        <div class="footer-rights">All rights reserved.</div>
+      </div>
+      <!-- EDIT: Your social links -->
+      <div class="footer-links">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/isaachang" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="mailto:your@email.com" aria-label="Email">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

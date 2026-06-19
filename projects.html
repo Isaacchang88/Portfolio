@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Isaac</title>
+  <meta name="description" content="Projects by Your Name — IT Graduate & AI Engineer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="nav scrolled" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-mark">IC</span>
+        Isaac
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="index.html#education">Education</a></li>
+      </ul>
+
+      <!-- EDIT: Change to your email -->
+      <a href="mailto:your@email.com" class="nav-cta">Get in Touch</a>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav-mobile" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#education">Education</a>
+      <a href="mailto:your@email.com">Get in Touch</a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="page-header-glow"></div>
+    <div class="container page-header-content">
+      <div class="section-label" style="color: #38BDF8; margin-bottom: 12px;">
+        <span style="background:#38BDF8; width:26px; height:2px; border-radius:2px; display:inline-block;"></span>
+        My Work
+      </div>
+      <h1>Projects</h1>
+      <p>Highlights from my university studies — spanning AI, web development, and data science.</p>
+    </div>
+  </header>
+
+
+  <!-- ================================================
+       PROJECTS GRID
+
+       HOW TO ADD A NEW PROJECT:
+       ─────────────────────────────────────────────
+       1. Copy one of the <article> blocks below.
+       2. Paste it before the closing </div> of
+          #projects-container.
+       3. Fill in your own details (see EDIT comments).
+       4. Set data-category to one of:
+            ml | web | data | other
+          (this controls the filter buttons)
+       ─────────────────────────────────────────────
+       ================================================ -->
+  <section class="all-projects-section">
+    <div class="container">
+
+      <!-- Filter buttons — categories are auto-linked to data-category on cards -->
+      <div class="filter-bar" id="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="data">Data Science</button>
+        <button class="filter-btn" data-filter="other">Other</button>
+      </div>
+
+      <div class="all-projects-grid" id="projects-container">
+
+        <!-- ══════════════════════════════════════════
+             PROJECT CARD TEMPLATE — copy this block
+             to add a new project, then fill in EDIT fields
+             ══════════════════════════════════════════
+
+        <article class="project-card-full" data-category="ml">
+          <div class="project-image">
+            <img src="images/your-screenshot.png" alt="Project Name">
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-cat">Category Name</div>
+            <h3>Project Title</h3>
+            <p>
+              A short description of what this project is, what problem it solves,
+              and what you learned or achieved. 2–4 sentences works well.
+            </p>
+            <div class="project-tech">
+              <span class="tag">Tech 1</span>
+              <span class="tag">Tech 2</span>
+              <span class="tag">Tech 3</span>
+            </div>
+            <div class="project-links-row">
+              <a href="#" target="_blank" rel="noopener" class="project-link-btn filled">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                GitHub
+              </a>
+              <a href="#" target="_blank" rel="noopener" class="project-link-btn">
+                Live Demo ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        END OF TEMPLATE ═══════════════════════════ -->
+
+
+        <!-- ── Project 1: Machine Learning ───────── -->
+        <article class="project-card-full fade-in" data-category="ml">
+          <div class="project-image">
+            <a href="project-ai-recommendation.html" class="project-card-image-link">
+              <div class="project-carousel">
+                <img src="birds-of-prey-windows-theme-1-hd.jpg" alt="AI Recommendation System" class="active">
+                <!-- <img src="birds-of-prey-windows-theme-1-hd.jpg" alt="AI Recommendation System - 2"> -->
+              </div>
+            </a>
+          </div>
+          <div class="project-content">
+            <!-- EDIT: Fill in all your project details -->
+            <div class="project-cat">Machine Learning</div>
+            <h3><a href="project-ai-recommendation.html" class="project-card-title-link">AI Recommendation System</a>
+            </h3>
+            <p>
+              A collaborative filtering recommendation engine that personalises content for users
+              using deep learning and matrix factorisation techniques. Trained on a dataset of
+              100,000+ interactions, achieving a 23% improvement in recommendation accuracy over
+              a baseline model.
+            </p>
+            <div class="project-tech">
+              <span class="tag">Python</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Flask</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <div class="project-links-row">
+              <a href="#" target="_blank" rel="noopener" class="project-link-btn filled">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
+                GitHub
+              </a>
+              <a href="#" target="_blank" rel="noopener" class="project-link-btn">Live Demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ── Project 2: Web Development ─────────── -->
+        <article class="project-card-full fade-in" data-category="web">
+          <div class="project-image">
+            <a href="project-full-stack-web.html" class="project-card-image-link">
+              <div class="project-carousel">
+                <img src="birds-of-prey-windows-theme-1-hd.jpg" alt="Full-Stack Web Application" class="active">
+              </div>
+            </a>
+          </div>
+          <div class="project-content">
+            <div class="project-cat">Web Development</div>
+            <h3><a href="project-full-stack-web.html" class="project-card-title-link">Full-Stack Web Application</a>
+            </h3>
+            <p>
+              A responsive, full-stack web application with JWT-based user authentication,
+              real-time notifications via WebSockets, and a RESTful API backend. Deployed
+              on AWS EC2 with an automated CI/CD pipeline using GitHub Actions.
+            </p>
+            <div class="project-tech">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">AWS</span>
+            </div>
+            <div class="project-links-row">
+              <a href="#" target="_blank" rel="noopener" class="project-link-btn filled">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
+                GitHub
+              </a>
+              <a href="#" target="_blank" rel="noopener" class="project-link-btn">Live Demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ── Project 3: Data Science ─────────────── -->
+        <article class="project-card-full fade-in" data-category="data">
+          <div class="project-image">
+            <a href="project-data-analytics-dashboard.html" class="project-card-image-link">
+              <div class="project-carousel">
+                <img src="birds-of-prey-windows-theme-1-hd.jpg" alt="Data Analytics Dashboard" class="active">
+              </div>
+            </a>
+          </div>
+          <div class="project-content">
+            <div class="project-cat">Data Science</div>
+            <h3><a href="project-data-analytics-dashboard.html" class="project-card-title-link">Data Analytics
+                Dashboard</a></h3>
+            <p>
+              An interactive dashboard built with Python and D3.js to visualise trends and
+              insights from large datasets. Includes predictive modelling using regression
+              and classification algorithms, with exportable PDF reports.
+            </p>
+            <div class="project-tech">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">D3.js</span>
+              <span class="tag">scikit-learn</span>
+            </div>
+            <div class="project-links-row">
+              <a href="#" target="_blank" rel="noopener" class="project-link-btn filled">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
+                GitHub
+              </a>
+              <a href="#" target="_blank" rel="noopener" class="project-link-btn">Live Demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- ── Project 4: NLP / ML ─────────────────── -->
+        <article class="project-card-full fade-in" data-category="ml">
+          <div class="project-image">
+            <a href="project-sentiment-analysis-tool.html" class="project-card-image-link">
+              <div class="project-image-placeholder">🧠</div>
+            </a>
+          </div>
+          <div class="project-content">
+            <div class="project-cat">Natural Language Processing</div>
+            <h3><a href="project-sentiment-analysis-tool.html" class="project-card-title-link">Sentiment Analysis
+                Tool</a></h3>
+            <p>
+              A fine-tuned BERT-based sentiment classifier for social media text, capable of
+              detecting nuanced sentiment across 5 categories. Includes a web interface
+              for real-time analysis and a batch processing API endpoint.
+            </p>
+            <div class="project-tech">
+              <span class="tag">Python</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">HuggingFace</span>
+              <span class="tag">FastAPI</span>
+            </div>
+            <div class="project-links-row">
+              <a href="#" target="_blank" rel="noopener" class="project-link-btn filled">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
+                GitHub
+              </a>
+              <a href="#" target="_blank" rel="noopener" class="project-link-btn">Live Demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-name">Isaac</div>
+        <div class="footer-copy">© 2026 · Built with HTML, CSS &amp; JavaScript</div>
+      </div>
+      <!-- EDIT: Your social links -->
+      <div class="footer-links">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="mailto:your@email.com" aria-label="Email">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
