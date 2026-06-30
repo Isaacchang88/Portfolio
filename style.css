@@ -777,11 +777,16 @@ body.detail-page .nav.scrolled {
   display: none;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--surface-alt);
 }
 
 .project-carousel img.active {
   display: block;
+}
+
+body.detail-page .project-card-full .project-image img {
+  object-fit: contain;
 }
 
 .project-prev,
