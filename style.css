@@ -1450,3 +1450,8 @@ body.detail-page .project-card-full .project-content {
     align-items: flex-start;
   }
 }
+
+.project-overlay .project-prev,
+.project-overlay .project-next {
+  color: #000;
+}
