@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Russel Street Medical | Isaac</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="detail-page">
+  <nav class="nav scrolled" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-mark">IC</span>
+        Isaac
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="index.html#education">Education</a></li>
+      </ul>
+      <a href="mailto:example@gmail.com" class="nav-cta">Get in Touch</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#education">Education</a>
+      <a href="mailto:example@gmail.com">Get in Touch</a>
+    </div>
+  </nav>
+
+  <section class="all-projects-section">
+    <div class="container">
+      <div class="section-label" style="color: #38BDF8; margin-bottom: 12px;">
+        <span
+          style="background:#38BDF8; width:26px; height:2px; border-radius:2px; display:inline-block; vertical-align:middle; margin-right:8px;"></span>
+        Project Detail
+      </div>
+      <h1>Russel Street Medical — Clinic Website</h1>
+      <p>A fully responsive multi-page clinic website for a Melbourne CBD medical practice, featuring an
+        image carousel, a validated patient booking system, and a PHP-powered admin portal with
+        session-based authentication and CSV data management.</p>
+
+      <div class="project-card-full" style="margin-top: 24px;">
+        <div class="project-image">
+          <div class="project-carousel">
+            <img src="images/RSM_homepage1.png" alt="Russel Street Medical — home page hero and about section"
+              class="active">
+            <img src="images/RSM_homepage2.png" alt="Russel Street Medical — staff profiles and service area">
+            <img src="images/RSM_homepage3.jpeg" alt="Russel Street Medical — image carousel and footer">
+            <img src="images/RSM_booking.jpeg"
+              alt="Russel Street Medical — patient booking form with pill-group time selector">
+            <img src="images/RSM_admin.png"
+              alt="Russel Street Medical — admin portal with booking table and user management">
+          </div>
+          <div class="project-overlay">
+            <a href="#" class="project-prev" aria-label="Previous image">‹</a>
+            <a href="#" class="project-next" aria-label="Next image">›</a>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <!-- Context -->
+          <div style="border-top: 1px solid var(--border, rgba(255,255,255,0.08)); padding-top: 20px;">
+            <h2 style="font-size: 22px; font-weight: 700; margin-bottom: 16px;">Project Context</h2>
+            <p style="max-width: 100%; color: var(--text-mid); line-height: 1.7; margin-bottom: 16px;">
+              Russel Street Medical is a small clinic. The brief was to design and build their web presence from
+              scratch: a public-facing site that introduces the practice, its staff, and its services, alongside a
+              patient booking system and a secure internal portal for admin staff to manage appointment
+              requests and user accounts.
+            </p>
+            <p style="max-width: 100%; color: var(--text-mid); line-height: 1.7;">
+              The project was built in two phases. The first phase delivered the static front-end -
+              responsive layout, brand colours, sticky navigation, staff profiles, and a JavaScript-validated booking
+              form. The second phase introduced a PHP back-end: server-side form validation, CSV-based data persistence,
+              session authentication, and a full admin dashboard - all hosted on RMIT's Coreteaching servers.
+            </p>
+          </div>
+
+          <div style="margin-top:30px; border-top: 1px solid var(--border, rgba(255,255,255,0.08)); padding-top: 20px;"
+            class="project-cat">
+            Frontend · PHP · Web Development</div>
+          <p>
+            The site uses a modular PHP architecture - shared header, footer, and utility functions are
+            extracted into include files, keeping each page lean. The booking form implements dual-layer validation:
+            HTML5 patterns and custom JavaScript on the client side (including a checksum-based patient ID validator),
+            plus full server-side re-validation in PHP to guard against submissions with JavaScript disabled. All
+            booking data is persisted to a CSV file and read back.
+          </p>
+
+          <!-- Feature highlights -->
+          <div style="margin: 16px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <div
+              style="background: var(--bg-card, rgba(255,255,255,0.04)); border: 1px solid var(--border, rgba(255,255,255,0.08)); border-radius: 10px; padding: 12px 14px;">
+              <div
+                style="font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #38BDF8; margin-bottom: 4px;">
+                Responsive Home Page</div>
+              <div style="font-size: 13px; color: var(--text-mid); line-height: 1.5;">Sticky nav with smooth
+                scrolling, About Us section with fee table, staff profiles, service area, and an auto-cycling
+                image carousel with manual prev/next controls.</div>
+            </div>
+            <div
+              style="background: var(--bg-card, rgba(255,255,255,0.04)); border: 1px solid var(--border, rgba(255,255,255,0.08)); border-radius: 10px; padding: 12px 14px;">
+              <div
+                style="font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #38BDF8; margin-bottom: 4px;">
+                Patient Booking Form</div>
+              <div style="font-size: 13px; color: var(--text-mid); line-height: 1.5;">Patient ID field with
+                live uppercase conversion and checksum validation, date picker with no past dates, stylised pill-group
+                time-slot checkboxes, appointment reason dropdown with contextual advice panel.</div>
+            </div>
+            <div
+              style="background: var(--bg-card, rgba(255,255,255,0.04)); border: 1px solid var(--border, rgba(255,255,255,0.08)); border-radius: 10px; padding: 12px 14px;">
+              <div
+                style="font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #38BDF8; margin-bottom: 4px;">
+                Server-side Validation</div>
+              <div style="font-size: 13px; color: var(--text-mid); line-height: 1.5;">PHP re-validates all
+                POST data independently of JavaScript. Errors are rendered inline next to the offending field
+                with state preserved, and confirmed bookings are appended to a CSV with a timestamp.</div>
+            </div>
+            <div
+              style="background: var(--bg-card, rgba(255,255,255,0.04)); border: 1px solid var(--border, rgba(255,255,255,0.08)); border-radius: 10px; padding: 12px 14px;">
+              <div
+                style="font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #38BDF8; margin-bottom: 4px;">
+                Admin Portal</div>
+              <div style="font-size: 13px; color: var(--text-mid); line-height: 1.5;">Session-based login
+                reading credentials from a CSV user store, booking table with human-readable date formatting, staff
+                registration with duplicate prevention, and failed login logging to a separate access-attempts file.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pages built -->
+          <div style="margin-top: 20px;">
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <div
+                style="display:flex; align-items:center; gap:8px; padding: 8px 12px; background: var(--bg-card, rgba(255,255,255,0.04)); border-radius: 8px; border: 1px solid var(--border, rgba(255,255,255,0.08)); font-size:13px; color: var(--text-mid); white-space: nowrap;">
+                <span style="color:#38BDF8; font-weight:600;">01</span> Home Page
+              </div>
+              <div
+                style="display:flex; align-items:center; gap:8px; padding: 8px 12px; background: var(--bg-card, rgba(255,255,255,0.04)); border-radius: 8px; border: 1px solid var(--border, rgba(255,255,255,0.08)); font-size:13px; color: var(--text-mid); white-space: nowrap;">
+                <span style="color:#38BDF8; font-weight:600;">02</span> Booking Page
+              </div>
+              <div
+                style="display:flex; align-items:center; gap:8px; padding: 8px 12px; background: var(--bg-card, rgba(255,255,255,0.04)); border-radius: 8px; border: 1px solid var(--border, rgba(255,255,255,0.08)); font-size:13px; color: var(--text-mid); white-space: nowrap;">
+                <span style="color:#38BDF8; font-weight:600;">03</span> Admin Portal
+              </div>
+              <div
+                style="display:flex; align-items:center; gap:8px; padding: 8px 12px; background: var(--bg-card, rgba(255,255,255,0.04)); border-radius: 8px; border: 1px solid var(--border, rgba(255,255,255,0.08)); font-size:13px; color: var(--text-mid); white-space: nowrap;">
+                <span style="color:#38BDF8; font-weight:600;">04</span> tools.php
+              </div>
+              <div
+                style="display:flex; align-items:center; gap:8px; padding: 8px 12px; background: var(--bg-card, rgba(255,255,255,0.04)); border-radius: 8px; border: 1px solid var(--border, rgba(255,255,255,0.08)); font-size:13px; color: var(--text-mid); white-space: nowrap;">
+                <span style="color:#38BDF8; font-weight:600;">05</span> Shared Includes
+              </div>
+            </div>
+          </div>
+
+          <div class="project-tech" style="margin-top: 20px;">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">PHP</span>
+            <span class="tag">CSV / fputcsv</span>
+            <span class="tag">Sessions</span>
+          </div>
+          <div class="project-links-row">
+            <a href="https://github.com/yourrepo" class="project-link-btn filled" target="_blank"
+              rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="projects.html" class="project-link-btn" style="margin-top: 48px; display: inline-flex;">← Back to
+        Projects</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-name">Isaac</div>
+        <div class="footer-copy">© 2025 · Built with HTML, CSS &amp; JavaScript</div>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/yourname" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="mailto:example@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
